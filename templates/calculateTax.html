@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script> -->
+    <link rel="stylesheet" href="static/style.css"/>
+    <script type="text/javascript" src="static/index.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <h1 data-text="We Are Ready to Calculate Tax">We Are Ready to Calculate Tax</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Employee Name</td>
+                <td>:</td>
+                <td><input type="text" id="value0"></td>
+            </tr>
+            <tr>
+                <td>Main Salary</td>
+                <td>:</td>
+                <td><input type="number" id="value1"></td>
+            </tr>
+            <tr>
+                <td>Allowances</td>
+                <td>:</td>
+                <td><input type="number" id="value2"></td>
+            </tr>
+            <tr>
+                <td>Investation</td>
+                <td>:</td>
+                <td><input type="number" id="value3"></td>
+            </tr>
+            <tr>
+                <td>Status (M/NM)</td>
+                <td>:</td>
+                <td><input type="text" id="value4"></td>
+            </tr>
+            <tr>
+                <td>Responsibility</td>
+                <td>:</td>
+                <td><input type="number" id="value5"></td>
+            </tr>
+            <tr>
+                <td>NPWP (Y/N)</td>
+                <td>:</td>
+                <td><input type="text" id="value6"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="btnClick" onclick="calculateTax()" value="Calculate Tax"/>
+                </td>
+                <td>
+                    <input type="button" id="btnClick" onclick="reset(); addClass()" value="Reset"/>
+                </td>
+                <td>
+                    <input type="button" id="btnClick" class="btn" onclick="result()" value="Result">
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+
+    <div class="result">
+        <table>
+            <tr>
+                <td>Employee Name</td>
+                <td>:</td>
+                <td><div id="result0"></div></td>
+            </tr>
+            <tr>
+                <td>Gross Income</td>
+                <td>:</td>
+                <td><div id="result1"></div></td>
+            </tr>
+            <tr>
+                <td>Annual Gross Income</td>
+                <td>:</td>
+                <td><div id="result2"></div></td>
+            </tr>
+            <tr>
+                <td>Positional Fee</td>
+                <td>:</td>
+                <td><div id="result3"></div></td>
+            </tr>
+            <tr>
+                <td>PTKP</td>
+                <td>:</td>
+                <td><div id="result4"></div></td>
+            </tr>
+            <tr>
+                <td>PKP</td>
+                <td>:</td>
+                <td><div id="result5"></div></td>
+            </tr>
+            <tr>
+                <td>Annual Tax</td>
+                <td>:</td>
+                <td><div id="result6"></div></td>
+            </tr>
+            <tr>
+                <td>Monthly Tax</td>
+                <td>:</td>
+                <td><div id="result7"></div></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+    <div class="bubble"><span class="dot"></span></div>
+
+</div>
+
+</body>
+</html>
